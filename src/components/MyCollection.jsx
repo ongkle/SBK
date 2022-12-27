@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Heading, Text, Stack, Image, Button } from "@chakra-ui/react";
 
-const GameCard = ({ games }) => {
+const MyCollection = ({ games }) => {
   return (
-    <Stack key={games.label} mt={"40px"} direction={"row"} px={"40px"}>
+    <Stack key={games.label} mt={"0px"} direction={"row"} px={"40px"}>
       <Box
         w={"270px"}
         bg={"black"}
@@ -52,4 +52,4 @@ const GameCard = ({ games }) => {
   );
 };
 
-export default GameCard;
+export default MyCollection;

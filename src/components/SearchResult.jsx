@@ -2,6 +2,8 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import GameCard from "./GameCard";
 import displayItems from "../mock/data";
+import ActivityButton from "./ActivityButton";
+import Activity from "./Activity";
 import MyCollection from "./MyCollection";
 import myNFTs from "../mock/nftData";
 import React, { useState } from "react";
@@ -50,7 +52,7 @@ const SearchResult = () => {
         </Flex>
       </Stack>
 
-      <SimpleGrid
+      {/* <SimpleGrid
         columns={4}
         spacing={4}
         justify={"center"}
@@ -70,7 +72,12 @@ const SearchResult = () => {
           .map((games) => (
             <GameCard games={games} />
           ))}
-      </SimpleGrid>
+      </SimpleGrid> */}
+
+  
+
+<ActivityButton/>
+{/* <Activity/> */}
 
       <SimpleGrid
         columns={6}
